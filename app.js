@@ -53,24 +53,4 @@
     });
   });
 
-  const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
-  const analysisCards = Array.from(document.querySelectorAll("[data-category]"));
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selected = button.dataset.filter;
-
-      filterButtons.forEach((item) => {
-        const active = item === button;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
-
-      analysisCards.forEach((card) => {
-        const visible = selected === "all" || card.dataset.category === selected;
-        card.hidden = !visible;
-      });
-    });
-  });
-
 })();
