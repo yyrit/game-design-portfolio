@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="颜应昊的游戏策划作品集：可玩原型、原创策划案与游戏系统拆解。">
+  <meta name="theme-color" content="#111c2d">
+  <title>颜应昊｜游戏策划作品集</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark">YH</span>
+      <span class="brand-copy">YAN YINGHAO<small>GAME DESIGN</small></span>
+    </a>
+    <nav class="site-nav" aria-label="主要导航">
+      <a href="#demos">Demo</a>
+      <a href="#proposals">原创策划</a>
+      <a href="#analysis">系统拆解</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">GAME SYSTEMS · PROTOTYPING · ANALYSIS</p>
+        <h1>把玩法判断<br>做成<span>能运行的结果。</span></h1>
+        <p class="hero-intro">我是颜应昊，武汉大学计算机科学与技术专业。关注系统策划、玩法验证与产品分析，也把技术背景用于快速完成原型和数据复盘。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#demos">观看完整 Demo</a>
+          <a class="button button-quiet" href="./documents/简历-游戏.pptx" download>下载简历</a>
+        </div>
+      </div>
+
+      <aside class="hero-board reveal" aria-label="作品集概览">
+        <div class="board-label">PORTFOLIO / 2026</div>
+        <div class="board-line"><strong>02</strong><span>可播放原型<br>PLAYABLE BUILDS</span></div>
+        <div class="board-line"><strong>02</strong><span>原创策划案<br>ORIGINAL PROPOSALS</span></div>
+        <div class="board-line"><strong>05</strong><span>系统拆解<br>SYSTEM ANALYSES</span></div>
+        <p>从可玩体验、规则结构到商业化与长期运营，展示完整的策划思考链路。</p>
+      </aside>
+    </section>
+
+    <section class="demo-stage" id="demos">
+      <div class="section-heading section-heading-light reveal">
+        <div>
+          <p class="section-code">D / PLAYABLE</p>
+          <h2>完整 Demo</h2>
+        </div>
+        <p>无需下载，直接观看完整实机流程。播放器默认只加载元数据，不会在打开页面时预载整条视频。</p>
+      </div>
+
+      <article class="demo-case reveal">
+        <div class="demo-copy">
+          <p class="case-index">D—01</p>
+          <h3>Ruinlight</h3>
+          <p class="case-type">PC · 2D 平台跳跃 · 空间传送原型</p>
+          <p class="case-summary">围绕“瞄准—投掷—交换位置”建立移动解题语法，让传送既是通过地形的工具，也是路线规划与操作节奏的核心。</p>
+          <dl class="case-facts">
+            <div><dt>验证重点</dt><dd>传送目标、落点预判与关卡节奏</dd></div>
+            <div><dt>呈现内容</dt><dd>基础教学、连续机关、简单模式</dd></div>
+            <div><dt>完整演示</dt><dd data-duration-for="ruinlight">04:55</dd></div>
+          </dl>
+        </div>
+        <div class="video-shell">
+          <iframe id="ruinlight-frame" title="Ruinlight B站完整实机演示" loading="lazy" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen hidden></iframe>
+          <video id="ruinlight-video" controls preload="metadata" playsinline poster="./assets/covers/ruinlight.jpg" aria-label="Ruinlight 完整实机演示"></video>
+          <p class="video-error" data-error-for="ruinlight" hidden>视频暂时无法加载，请检查媒体配置中的 BV 号或本地视频路径。</p>
+        </div>
+      </article>
+
+      <article class="demo-case demo-case-reverse reveal">
+        <div class="demo-copy">
+          <p class="case-index">D—02</p>
+          <h3>Monster Waves</h3>
+          <p class="case-type">PC · Survivors-like · 战斗成长原型</p>
+          <p class="case-summary">以角色选择、主动技能与局内升级组成生存循环，通过敌潮密度和成长选择验证“生存—成长—决战”的节奏。</p>
+          <dl class="case-facts">
+            <div><dt>验证重点</dt><dd>敌潮压力、技能组合与升级反馈</dd></div>
+            <div><dt>呈现内容</dt><dd>角色选择、技能构筑、首领倒计时</dd></div>
+            <div><dt>完整演示</dt><dd data-duration-for="monsterWaves">06:53</dd></div>
+          </dl>
+        </div>
+        <div class="video-shell">
+          <iframe id="monster-waves-frame" title="Monster Waves B站完整实机演示" loading="lazy" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen hidden></iframe>
+          <video id="monster-waves-video" controls preload="metadata" playsinline poster="./assets/covers/monster-waves.jpg" aria-label="Monster Waves 完整实机演示"></video>
+          <p class="video-error" data-error-for="monsterWaves" hidden>视频暂时无法加载，请检查媒体配置中的 BV 号或本地视频路径。</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="proposal-section" id="proposals">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-code">P / ORIGINAL</p>
+          <h2>原创策划案</h2>
+        </div>
+        <p>从一句话概念展开到核心循环、规则边界、关卡、商业化与验证指标。</p>
+      </div>
+
+      <div class="proposal-grid">
+        <article class="proposal-card reveal">
+          <a class="proposal-cover" href="./documents/拾光策划案.pdf" target="_blank" rel="noopener">
+            <img src="./assets/covers/shiguang.jpg" alt="《拾光》策划案封面" loading="lazy">
+          </a>
+          <div class="proposal-copy">
+            <p class="case-index">P—01 · 35 PAGES</p>
+            <h3>拾光</h3>
+            <p>PC 单机 2D 横版光影解谜。光会创造道路并唤醒危险，阴影则能被塑造成安全通路。</p>
+            <ul class="tag-list" aria-label="策划内容">
+              <li>核心循环</li><li>光影系统</li><li>14 关结构</li><li>美术与音频规范</li>
+            </ul>
+            <a class="text-link" href="./documents/拾光策划案.pdf" target="_blank" rel="noopener">在线查看完整策划案 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="proposal-card reveal">
+          <a class="proposal-cover" href="./documents/元素纪元SLG策划案.pdf" target="_blank" rel="noopener">
+            <img src="./assets/covers/element.jpg" alt="《元素纪元》SLG 策划案封面" loading="lazy">
+          </a>
+          <div class="proposal-copy">
+            <p class="case-index">P—02 · 4X SLG</p>
+            <h3>元素纪元</h3>
+            <p>轻度塔防引流、英雄养成与联盟地脉沙盘结合的八周赛季 SLG，强调玩法入口与长期系统的同构。</p>
+            <ul class="tag-list" aria-label="策划内容">
+              <li>市场定位</li><li>三层循环</li><li>联盟沙盘</li><li>经济与商业化</li>
+            </ul>
+            <a class="text-link" href="./documents/元素纪元SLG策划案.pdf" target="_blank" rel="noopener">在线查看完整策划案 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="analysis-section" id="analysis">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-code">A / ANALYSIS</p>
+          <h2>系统拆解</h2>
+        </div>
+        <p>不止描述系统组成，更关注系统为何成立、变量如何耦合，以及设计收益与代价。</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="筛选拆解案">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部 5</button>
+        <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">系统与数值</button>
+        <button class="filter-button" type="button" data-filter="product" aria-pressed="false">产品与运营</button>
+      </div>
+
+      <div class="analysis-grid" id="work-grid">
+        <article class="analysis-card reveal" data-category="systems">
+          <p class="case-index">A—01 · 21 PAGES</p>
+          <h3>CS2 经济系统与枪械数值</h3>
+          <p>用“回合决策价值”连接购买、保枪、败方补偿和武器梯度，说明单回合选择如何形成多回合博弈。</p>
+          <div class="card-meta"><span>经济系统</span><span>武器数值</span><span>耦合分析</span></div>
+          <a class="card-link" href="./documents/《CS2》经济系统与枪械数值系统拆解.pdf" target="_blank" rel="noopener" aria-label="查看 CS2 拆解 PDF">查看 PDF <span>↗</span></a>
+        </article>
+
+        <article class="analysis-card reveal" data-category="product">
+          <p class="case-index">A—02 · 37 PAGES</p>
+          <h3>Top War / 口袋奇兵</h3>
+          <p>从合成入口延伸到基地、英雄、联盟、服务器生命周期与付费梯度，分析轻量操作如何承接长期 4X。</p>
+          <div class="card-meta"><span>SLG</span><span>用户生命周期</span><span>商业化</span></div>
+          <a class="card-link" href="./documents/《Top War／口袋奇兵》拆解报告.pdf" target="_blank" rel="noopener" aria-label="查看 Top War 拆解 PDF">查看 PDF <span>↗</span></a>
+        </article>
+
+        <article class="analysis-card reveal" data-category="systems">
+          <p class="case-index">A—03 · 25 PAGES</p>
+          <h3>炉石传说：酒馆战棋</h3>
+          <p>拆解英雄、酒馆经济、共享卡池、受控随机和转型风险，解释轻入口如何保持长期局内深度。</p>
+          <div class="card-meta"><span>自走棋</span><span>概率</span><span>多人博弈</span></div>
+          <a class="card-link" href="./documents/《炉石传说-酒馆战旗》拆解案.pdf" target="_blank" rel="noopener" aria-label="查看酒馆战棋拆解 PDF">查看 PDF <span>↗</span></a>
+        </article>
+
+        <article class="analysis-card reveal" data-category="product">
+          <p class="case-index">A—04 · 28 PAGES</p>
+          <h3>三款休闲游戏对比拆解</h3>
+          <p>横向比较 Block Blast、Vita Mahjong 与 Royal Match 的单局反馈、失败恢复、留存、商业化和内容成本。</p>
+          <div class="card-meta"><span>休闲游戏</span><span>竞品分析</span><span>留存</span></div>
+          <a class="card-link" href="./documents/三款休闲游戏对比拆解.pdf" target="_blank" rel="noopener" aria-label="查看休闲游戏对比拆解 PDF">查看 PDF <span>↗</span></a>
+        </article>
+
+        <article class="analysis-card analysis-card-wide reveal" data-category="product">
+          <p class="case-index">A—05 · 16 PAGES</p>
+          <h3>关于目前 SLG 游戏的一些分析与想法</h3>
+          <p>以玩家如何进入、战争如何组织、服务器如何循环三条轴线比较主流产品路线，并讨论联盟劳动、服务器老化与失败恢复。</p>
+          <div class="card-meta"><span>4X</span><span>产品路线</span><span>长期运营</span></div>
+          <a class="card-link" href="./documents/关于目前SLG游戏的一些分析与想法.pdf" target="_blank" rel="noopener" aria-label="查看 SLG 分析 PDF">查看 PDF <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-lead reveal">
+        <p class="section-code">PROFILE</p>
+        <h2>技术背景，<br>策划视角。</h2>
+        <p>计算机专业训练让我可以理解实现边界、快速验证规则；增长运营经历让我习惯从玩家行为、数据与投入产出判断方案。</p>
+      </div>
+      <div class="about-details reveal">
+        <div class="about-block">
+          <h3>教育与经历</h3>
+          <p><strong>武汉大学 · 计算机科学与技术</strong><br>本科，GPA 3.51 / 4.00</p>
+          <p><strong>海外休闲游戏增长运营</strong><br>负责 Puzzle 类产品投放、数据监控、素材洞察与策略迭代。</p>
+        </div>
+        <div class="about-block">
+          <h3>工作方法</h3>
+          <ul>
+            <li>把抽象体验拆成可验证的规则与指标</li>
+            <li>用原型、流程图和数值表推动讨论</li>
+            <li>同时关注短期反馈与长期系统代价</li>
+          </ul>
+        </div>
+        <div class="about-block">
+          <h3>工具与能力</h3>
+          <p>Unity · C# · Python · SQL · C++ · 数据分析 · AI 工具提效</p>
+        </div>
+        <div class="about-actions">
+          <a class="button button-primary" href="mailto:2537992436@qq.com">联系我</a>
+          <a class="button button-dark" href="./documents/简历-游戏.pptx" download>下载完整简历</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>颜应昊 · GAME DESIGN PORTFOLIO</p>
+    <a href="#top">返回顶部 ↑</a>
+  </footer>
+
+  <script src="./media-config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
